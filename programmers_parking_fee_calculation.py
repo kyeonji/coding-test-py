@@ -22,6 +22,7 @@ def solution(fees, records):
     answer = []
 
     stack_time = []
+    # [learned] use lambda function
     records.sort(key = lambda x:x.split()[1])
 
     car = records[0].split()[1]
@@ -48,6 +49,7 @@ def solution(fees, records):
             stack_time.append(time)
 
     # for last car
+    # [caution] don't forget the last case
     t = 0
     if len(stack_time) % 2 != 0:
         stack_time.append('23:59')
@@ -58,4 +60,6 @@ def solution(fees, records):
 
     return answer
 
+# [more]
+# - use Class if possible
 
