@@ -1,8 +1,9 @@
 import programmers_parking_fee_calculation as pfc
 import programmers_hopscotch as h
+import programmers_visiting_length as vl
 
 if __name__ == '__main__':
-    land = [[1, 2, 3, 5], [5, 6, 7, 8], [4, 3, 2, 1]]
+    dirs = "ULURRDLLU"
 
-    answer = h.solution(land)
+    answer = vl.solution(dirs)
     print(answer)
