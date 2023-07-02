@@ -7,8 +7,8 @@ def solution(skill, skill_trees):
             # in : if element exist in list or string
             if s in skill:
                 skill_to_check += s
-        # list.find(e) : return index of e in list. if do not exits, return -1
-        # list. index(e) : do same but, if do not exits, occurs error
+        # string.find(e) : return index of char in string. if do not exits, return -1
+        # string.index(e) : do same but, if do not exits, occurs error
         if skill.find(skill_to_check) == 0:
             answer += 1
 
