@@ -4,8 +4,10 @@ import programmers_visiting_length as vl
 import programmers_skill_tree as st
 import programmers_dictionary as d
 import programmers_file_name_sorting as fns
+import programmers_bigger_number_in_back as bnib
 
 if __name__ == '__main__':
-    files = ["img12.png", "img10.png", "img02.png", "img1.png", "IMG01.GIF", "img2.JPG"]
-    answer = fns.solution(files)
+    numbers = [9, 1, 5, 3, 6, 2]
+    answer = bnib.solution_from_other(numbers)
     print(answer)
+
